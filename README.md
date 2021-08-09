@@ -1,17 +1,21 @@
-# shop
+# Welcome to NewTypeS
 
-A new Flutter project.
+- NewTypeS, or the name in app is NewTypeS is an online market for top quality plastic models.
 
-## Getting Started
+- The mobile app is fully responsive so you can get your desired models.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Frontend
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - Flutter 
+ - [Provider](https://pub.dev/packages/provider)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# shop_app" 
+
+### Backend
+
+- [Firebase](https://firebase.google.com/)
+
+
+## API &#128421;
+
+- [Firebase Database REST API](https://firebase.google.com/docs/reference/rest/database)
