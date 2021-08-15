@@ -1,6 +1,6 @@
 # Welcome to NewTypeS
 
-- NewTypeS, or the name in app is NewTypeS is an online market for top quality plastic models.
+- NewTypeS is an online market for top quality plastic models.
 
 - The mobile app is fully responsive so you can get your desired models.
 
