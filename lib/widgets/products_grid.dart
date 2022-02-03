@@ -14,19 +14,21 @@ class ProductGrids extends StatelessWidget {
     final showProducts =
         showFavs ? productsData.favoriteItems : productsData.items;
 
-    return GridView.builder(
-      padding: const EdgeInsets.all(10.0),
-      itemCount: showProducts.length,
-      itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
-        value: showProducts[i],
-        child: ProductItem(),
-      ),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        childAspectRatio: 2 / 3,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-      ),
-    );
+    return OrientationBuilder(builder: (context, orientation) {
+      return GridView.builder(
+        padding: const EdgeInsets.all(10.0),
+        itemCount: showProducts.length,
+        itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
+          value: showProducts[i],
+          child: ProductItem(),
+        ),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+          childAspectRatio: orientation == Orientation.portrait ? 2 / 3 : 4 / 6,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+        ),
+      );
+    });
   }
 }

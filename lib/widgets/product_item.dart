@@ -32,8 +32,22 @@ class ProductItem extends StatelessWidget {
           onTap: () {
             Navigator.of(context).pushNamed(
               ProductDetailScreen.routeName,
+              //* Pass the arguments. The ProductDetailScreen reads the arguments from the settings
               arguments: product.id,
             );
+
+            //? Alternative
+            // Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //       builder: (context) =>  ProductDetailScreen(),
+            //       //? Pass the arguments as part of the RouteSettings. The
+            //       //? ProductDetailScreen reads the arguments from these settings.
+            //       settings: RouteSettings(
+            //         arguments: product.id,
+            //       ),
+            //     ),
+            //   );
           },
           child: Container(
             width: double.infinity,
